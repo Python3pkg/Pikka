@@ -2,8 +2,8 @@ import time
 
 import Pyro4
 
-from core.singleton.singleton import Singleton
-from Pikka import Pikka
+from Pikka.core.singleton.singleton import Singleton
+from Pikka.Pikka import Pikka
 
 
 class TestCounter(metaclass=Singleton):

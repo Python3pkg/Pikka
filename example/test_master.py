@@ -1,4 +1,4 @@
-from Pikka import Pikka
+from Pikka.Pikka import Pikka
 
 
 def main():
