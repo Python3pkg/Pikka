@@ -2,7 +2,7 @@ import time
 
 import Pyro4
 
-from Pikka.core.singleton.singleton import Singleton
+from Pikka.core.singleton import Singleton
 from Pikka.Pikka import Pikka
 
 

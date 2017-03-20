@@ -1,8 +1,6 @@
 import Pyro4
 from Pyro4.errors import CommunicationError
-
-from Pikka.actor.actor import Actor
-from Pikka.core.singleton.singleton import Singleton
+from Pikka.core.singleton import Singleton
 
 
 class ActorManager(metaclass=Singleton):

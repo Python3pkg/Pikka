@@ -9,6 +9,7 @@ Pikka/actor/__init__.py
 Pikka/actor/actor.py
 Pikka/actor/actor_manager.py
 Pikka/core/__init__.py
+Pikka/core/singleton.py
 Pikka/thread/__init__.py
 Pikka/thread/daemon_thread.py
 Pikka/thread/manager_thread.py

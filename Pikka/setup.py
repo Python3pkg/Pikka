@@ -4,7 +4,7 @@ setup(
     name = 'Pikka',
     packages = ['Pikka', 'Pikka.core', 'Pikka.actor', 'Pikka.action', 'Pikka.thread'],
     scripts = [],
-    version = '0.0.8',
+    version = '0.0.11',
     description = 'Project implements network pattern to like Akka base on Pyro',
     author = 'mmmaaaxxx77',
     author_email = 'mmmaaaxxx77@gmail.com',

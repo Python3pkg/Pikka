@@ -3,9 +3,6 @@ import threading
 import Pyro4
 import time
 
-from Pikka.actor.actor_manager import ActorManager
-from Pikka.thread.daemon_thread import ServerThread
-
 
 class RegisterThread(threading.Thread):
 

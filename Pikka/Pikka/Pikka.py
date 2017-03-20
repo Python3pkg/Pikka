@@ -1,4 +1,4 @@
-from Pikka.core.singleton.singleton import Singleton
+from Pikka.core.singleton import Singleton
 from Pikka.thread.daemon_thread import ServerThread
 
 from Pikka.thread.manager_thread import ManagerThread
@@ -21,7 +21,7 @@ class Pikka(metaclass=Singleton):
     def __server__(self, actions, **kwargs):
         # server thread
         self.server_thread = ServerThread(actions=actions, **kwargs)
-        # self.server_thread.daemon = True
+        #self.server_thread.daemon = True
         self.server_thread.start()
         print("Pyro4 Daemon Server start")
 
@@ -37,5 +37,3 @@ class Pikka(metaclass=Singleton):
     def message(self, action, *args, **kwargs):
         message_thread = MessageThread(action, *args, **kwargs)
         message_thread.start()
-
-
