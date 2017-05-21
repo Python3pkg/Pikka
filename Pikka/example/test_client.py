@@ -15,7 +15,7 @@ class test_echo():
 
     def message(self, num):
         TestCounter().counter += num
-        print("counter: {}".format(TestCounter().counter))
+        print(("counter: {}".format(TestCounter().counter)))
         return TestCounter().counter
 
 

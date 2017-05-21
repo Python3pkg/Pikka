@@ -25,7 +25,7 @@ class MessageThread(threading.Thread):
                 proxy = Pyro4.Proxy(uri)
                 async = Pyro4.async(proxy)
                 result = async.message(*self.args, **self.kwargs)
-                print(result.value)
+                print((result.value))
             except Exception as e:
-                print('error message action "{}" to {}'.format(self.action, uri))
+                print(('error message action "{}" to {}'.format(self.action, uri)))
                 print(e)

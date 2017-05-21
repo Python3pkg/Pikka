@@ -17,7 +17,7 @@ class ActorManager(metaclass=Singleton):
 
         # register actor
         self.actors.append(actor)
-        print("register {0}".format(actor))
+        print(("register {0}".format(actor)))
 
         return "success"
 
@@ -30,10 +30,10 @@ class ActorManager(metaclass=Singleton):
                 actor.info = result
             except CommunicationError as e:
                 self.actors.remove(actor)
-                print("lost actor {0}".format(actor))
+                print(("lost actor {0}".format(actor)))
             except KeyError as e:
                 self.actors.remove(actor)
-                print("actor has no _heartbeat action".format(actor))
+                print(("actor has no _heartbeat action".format(actor)))
 
 
     def all_actions(self):

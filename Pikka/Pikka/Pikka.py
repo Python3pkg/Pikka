@@ -1,9 +1,9 @@
-from Pikka.core.singleton import Singleton
-from Pikka.thread.daemon_thread import ServerThread
+from .Pikka.core.singleton import Singleton
+from .Pikka.thread.daemon_thread import ServerThread
 
-from Pikka.thread.manager_thread import ManagerThread
-from Pikka.thread.message_thread import MessageThread
-from Pikka.thread.register_thread import RegisterThread
+from .Pikka.thread.manager_thread import ManagerThread
+from .Pikka.thread.message_thread import MessageThread
+from .Pikka.thread.register_thread import RegisterThread
 
 
 class Pikka(metaclass=Singleton):

@@ -15,6 +15,6 @@ class ManagerThread(threading.Thread):
         while True:
             time.sleep(5)
             self.manager.check_heartbeat()
-            print(self.manager.all_actions())
+            print((self.manager.all_actions()))
 
 

@@ -19,6 +19,6 @@ class RegisterThread(threading.Thread):
         try:
             proxy = Pyro4.Proxy(Pyro4.URI('PYRO:base@{0}'.format(self.master_host)))
             result = proxy.register(uris=self.uris)
-            print('register actor to {} : {}'.format(self.master_host, result))
+            print(('register actor to {} : {}'.format(self.master_host, result)))
         except Exception as e:
-            print('error register actor to {} : {}'.format(self.master_host, e))
+            print(('error register actor to {} : {}'.format(self.master_host, e)))

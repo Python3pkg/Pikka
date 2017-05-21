@@ -23,8 +23,8 @@ class ServerThread(threading.Thread):
             uri = self.daemon.register(self.actions[key], objectId=key)
             self.uris[key] = Pyro4.URI(uri)
 
-        print("Ready. Object uri = {0}".format(base_uri))
-        print(self.uris)
+        print(("Ready. Object uri = {0}".format(base_uri)))
+        print((self.uris))
 
         self.config = Pyro4.config
         self.daemon.requestLoop()
